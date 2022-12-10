@@ -5,7 +5,7 @@ from pydantic import BaseModel #pydantic, занимается автомати�
 class Item(BaseModel):# импортируем из pydantic базовый вариант класса для моделей BaseModel и создаем на его основе свою модель:
     text: str
 app = FastAPI()
-classifier = pipeline("image-to-text", model="nlpconnect/vit-gpt2-image-captioning") #classifier = pipeline("sentiment-analysis")
+classifier = pipeline("image-to-text", model="nlpconnect/vit-gpt2-image-captioning") #подключаем модель с HugginFace
 
 @app.get("/")
 def root():
