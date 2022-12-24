@@ -2,5 +2,6 @@ fastapi
 pydantic
 uvicorn
 transformers
+torch
 httpx
 pytest
