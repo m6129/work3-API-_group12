@@ -5,12 +5,12 @@ from pydantic import BaseModel #pydantic, занимается автомати�
 class Item(BaseModel):# импортируем из pydantic базовый вариант класса для моделей BaseModel и создаем на его основе свою модель:
     text: str
 app = FastAPI()
-classifier = pipeline("image-to-text", model="nlpconnect/vit-gpt2-image-captioning") #подключаем модель с HugginFace
+classifier = pipeline("image-to-text", model="nlpconnect/vit-gpt2-image-captioning") #подключаем модель с HuggingFace
 
 @app.get("/")
 def root():
     """Эта функция вызывает классификатор"""
-    return {"img":'https://img5.goodfon.ru/original/1920x1080/b/2f/tpvvvr-aprvvr-dublin.jpg'}
+    return {"message": "Hello World from group 12'}
 
 #пара примеров картинок:
 #https://www.sunhome.ru/i/wallpapers/215/starinnii-zamok.1920x1080.jpg
