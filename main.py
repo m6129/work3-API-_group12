@@ -10,7 +10,7 @@ classifier = pipeline("image-to-text", model="nlpconnect/vit-gpt2-image-captioni
 @app.get("/")
 def root():
     """Эта функция вызывает классификатор"""
-    return {"message": "Hello World from group 12'}
+    return {"message": "Hello World from group 12"}
 
 #пара примеров картинок:
 #https://www.sunhome.ru/i/wallpapers/215/starinnii-zamok.1920x1080.jpg
