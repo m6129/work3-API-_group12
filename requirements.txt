@@ -2,7 +2,7 @@ fastapi
 pydantic
 uvicorn
 transformers
-torch
 httpx
 pytest
-pillow
+pillow  
+torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
