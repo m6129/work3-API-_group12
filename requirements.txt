@@ -5,4 +5,4 @@ transformers
 httpx
 pytest
 pillow  
-torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
+torch
